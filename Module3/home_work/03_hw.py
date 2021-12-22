@@ -1,4 +1,12 @@
-# Дан список из n элементов, заполненный произвольными целыми числами в диапазоне от -100 до 100.
-# Вывести на экран сумму всех положительных элементов кратных двум.
-
-# TODO: your code here
+import random
+numbers = []
+n_line = 2
+while len(numbers) < n_line:
+    numb = random.randint(-100, 100)
+    numbers.append(numb)
+print(numbers)
+summ = 0
+for numb in numbers:
+    if numb % 2 == 0 and numb > 0:
+        summ += numb
+print(summ)
